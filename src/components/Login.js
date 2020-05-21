@@ -16,7 +16,11 @@ class Login extends Component {
   };
   render() {
     return (
-      <div className="Login">
+      <div>
+        <section>
+        <h1>hello</h1>
+        
+        <div className="Login" >
         <h1>Login User form</h1>
         <label>
           Username:
@@ -40,6 +44,8 @@ class Login extends Component {
         <br />
         <button onClick={this.login}>Login</button>
         <button onClick={this.register}>Register</button>
+      </div>
+      </section>
       </div>
     );
   }

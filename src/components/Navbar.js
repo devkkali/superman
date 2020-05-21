@@ -2,7 +2,20 @@ import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
 
 export class Navbar extends Component {
-render () {
+  componentDidMount(){
+		//An array of assets
+		let scripts = [
+      { src: "js/theme.js" }
+		]
+		//Append the script element on each iteration
+		scripts.map(item => { 
+			const script = document.createElement("script")
+			script.src = item.src
+			script.async = true
+			document.body.appendChild(script)
+		})    
+	  };
+  render () {
     return (<div>
 
          {/*================Header Menu Area =================*/}
@@ -11,21 +24,11 @@ render () {
            <div className="container">
              <div className="float-left">
                <ul className="list header_social">
-                 <li><a href="#">Exciting offers here</a></li>
+                 <li><marquee><h4>&#128525;&#128525;&#128293;Refer 3 friends and get a chance to visit skatepark for free&#128293;&#128525;&#128525;</h4></marquee></li>
                </ul>
              </div>
              <div className="float-right">
-               <select>
-                 <option value={1}>USD</option>
-                 <option value={1}>EUR</option>
-                 <option value={1}>AOA</option>
-                 <option value={1}>AUD</option>
-               </select>
-               <select>
-                 <option value={1}>ENG</option>
-                 <option value={1}>FRA</option>
-                 <option value={1}>BAN</option>
-               </select>
+              <h3>Contact us at +123456789</h3>
              </div>
            </div>
          </div>
@@ -33,7 +36,7 @@ render () {
            <nav className="navbar navbar-expand-lg navbar-light">
              <div className="container">
                {/* Brand and toggle get grouped for better mobile display */}
-               <a className="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt="" /></a>
+               <a className="navbar-brand logo_h" href="#home"><img src="img/logo.png" alt="" /></a>
                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                  <span className="icon-bar" />
                  <span className="icon-bar" />

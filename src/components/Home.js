@@ -13,10 +13,8 @@ render () {
             <div className="container">
               <div className="banner_content text-center">
                 <p className="top-text">Welcome to</p>
-                <h1>Radisson</h1>
-                <p className="text">If you are looking at blank cassettes on the web, you may be very confused at the difference in
-                  price. You may
-                  see some for as low as $.17 each.</p>
+                <h1> The Skatepark</h1>
+                <p className="text">The best place in Pokhara to skate &amp; have fun with friends providing happiness with safety and delicious food.</p>
                 <a className="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM">
                   <img src="img/video-icon.png" className="vdo-btn" alt="" />
                 </a>
@@ -29,10 +27,13 @@ render () {
         <section className="container">
           <div className="booking_area">
             <form action>
+            <div className="offer-center">
+            <img className="specialoffer-img" src="img/specialoffer.png" alt="" />
+            </div>
               <div className="row">
-                <div className="col-lg-3 col-sm-6 col-6">
+              <div className="col-lg-3 col-sm-6 col-6">
                   <div className="booking_item">
-                    <p>Check - in</p>
+                  <p>Check - in</p>
                     <span className="day">15</span>
                     <span className="month">th sep</span>
                     <label htmlFor="CheckIn">
@@ -205,7 +206,7 @@ render () {
         </section>
         {/* End Our Room Area */}
         {/*================Testimonials Area =================*/}
-        <section className="testimonials-area section_gap_top color-bg">
+       {/* <section className="testimonials-area section_gap_top color-bg">
           <div className="container">
             <div className="text-center">
               <img className="quote-img" src="img/quote.png" alt="" />
@@ -223,7 +224,7 @@ render () {
                   </ul>
                   <div className="wow fadeIn" data-wow-duration="1s">
                     <p>
-                      As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it,
+                      As conscious traveling Paupers we must always be oncerned about our dear Mother Earth. If you think about it,
                       you travel
                       across her face <br /> and She is the host to your journey.
                     </p>
@@ -316,10 +317,12 @@ render () {
               </div>
             </div>
           </div>
-        </section>
+    </section> */}
         {/*================End Testimonials Area =================*/}
+
         {/*================Latest Blog Area =================*/}
-        <section className="latest_blog_area section_gap color-bg">
+
+        {/* <section className="latest_blog_area section_gap color-bg">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -405,8 +408,52 @@ render () {
               </div>
             </div>
           </div>
-        </section>
+  </section> */}
+        
+        
         {/*================End Latest Blog Area =================*/}
+        {/*==================start gallery========================*/}
+      
+        <div>
+  <video autoPlay muted loop id="myVideo">
+    <source src="img/rain.mp4" type="video/mp4" />
+    Your browser does not support HTML5 video.
+  </video>
+  <div className="referrow">
+    <div className="refercolumn">
+      <div className="refercontainer">
+        <img id="myimg"src="img/newrefer.jpg" alt="Snow" style={{width: '100%'}} />   
+      </div> 
+    </div>
+    <div className="refercolumn">
+      <h1 className="arch">Benefits</h1>
+      <ul>
+        <li><h3>After refering to 3 of your friends, you can get  a free ticket.</h3></li>
+        <li><h3>After getting something... some text</h3></li>
+        <div className="away">
+          <button className="referbtn">Login</button>
+          <button className="referbtn">Register</button>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <section>
+    <div className="content1">
+      <div className="slider-wrapper">
+        I can 
+        <div className="slider">
+          <div className="slider-text1">SKATE</div>
+          <div className="slider-text2">CRASH</div>
+          <div className="slider-text3"> SKATE</div>
+        </div>
+      </div>       
+    </div>
+  </section>
+</div>
+
+      
+       {/*==================end gallery========================*/}
+
         {/*================ start footer Area  =================*/}
         <footer className="footer-area section_gap">
           <div className="container">
@@ -481,8 +528,8 @@ render () {
             <div className="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
               <div>
                 <p className="footer-text m-0">{/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-                  Copyright © All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                  {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}</p>
+                  Copyright © All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true" /> by <a href="https://encodesolutions.com.np" target="_blank">Encode Solutions</a>
+                  </p>
               </div>
               <div className="footer-social d-flex align-items-center">
                 <a href="#"><i className="fa fa-facebook" /></a>
